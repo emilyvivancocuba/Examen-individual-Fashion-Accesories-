@@ -1,0 +1,106 @@
+.home
+	.hero-title
+		a(href="#") Autumn/Winter Lookbook
+		p - 2016 Collection -
+	#myCarousel.carousel.slide(data-ride="carousel")
+		ol.carousel-indicators
+			li.active(data-target="#myCarousel", data-slide-to="0")
+			li(data-target="#myCarousel", data-slide-to="1")
+		.carousel-inner(role="listbox")
+			.item.active
+				img(src="assets/images/slider1.jpg", alt="Accesories slider 1")
+			.item
+				img(src="assets/images/slider2.jpg", alt="Accesories slider 2")
+		a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+			span.fa.fa-circle(aria-hidden="true")
+			span.sr-only Previous
+		a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
+			span.fa.fa-circle(aria-hidden="true")
+			span.sr-only Next
+	section
+		.container
+			.row
+				.col-xs-12.col-sm-5.col-md-5.col-lg-5
+					img.img-responsive(src="assets/images/banner1.jpg", alt="banner1")
+				.col-xs-12.col-sm-7.col-md-7.col-lg-7
+					img.responsive(src="assets/images/banner2.jpg", alt="banner2")
+			.titles
+				i.fa.fa-angle-left
+				span Latest
+				span Bestseller
+				span Sale
+				i.fa.fa-angle-right
+			.row
+				+article-price('assets/images/a1.jpg', 'guantes')
+					+tag-new
+				+article-price-offer('assets/images/b1.jpg', 'gorro')
+					+tag-sale
+					+tag-new
+				+article-price-offer('assets/images/c1.jpg', 'bolso')
+					+tag-sale
+				+article-price('assets/images/d1.jpg', 'cartera')
+					+tag-new
+	section.sponsors
+		.container
+			.row
+				+cliente('assets/images/client1.jpg', 'cliente activeden')
+				+cliente('assets/images/client2.jpg', 'cliente 3docean')
+				+cliente('assets/images/client3.jpg', 'cliente envato')
+				+cliente('assets/images/client4.jpg', 'cliente videohive')
+				+cliente('assets/images/client5.jpg', 'cliente graphicriver')
+				+cliente('assets/images/client6.jpg', 'cliente codecanyon')
+	section.clothing
+		.container
+			.titles
+				i.fa.fa-angle-left
+				span Clothing
+				span Equipments
+				span Jewellery
+				i.fa.fa-angle-right
+			.row
+				+article-price-buy('assets/images/a2.jpg', 'guantes')
+					+tag-sale
+					+tag-new
+				+article-price-buy('assets/images/d2.jpg', 'cartera')
+					+tag-new
+				+article-price-buy('assets/images/g2.jpg', 'billetera')
+			.row
+				+article-price-buy('assets/images/c2.jpg', 'bolso')
+					+tag-new
+				+article-price-buy('assets/images/c2.jpg', 'bolso')
+					+tag-sale
+				+article-price-buy('assets/images/e2.jpg', 'gorro')
+					+tag-new
+	section.blog
+		.container
+			.titles
+				i.fa.fa-angle-left
+				span Blog
+				i.fa.fa-angle-right
+			.row
+				+blog('assets/images/blog2.jpg', 'image', '#')
+				+blog('assets/images/blog1.jpg', 'image', '#')
+				+blog('assets/images/blog2.jpg', 'image', '#')
+				+blog('assets/images/blog3.jpg', 'image', '#')
+			.row
+				+col4
+					.borde-plomo
+						span
+							i.fa.fa-phone-square
+							div
+								h4 Order online now
+								p Call Us:(0123) 456 789
+				+col4
+					.borde-plomo
+						span
+							i.fa.fa-plane
+							div
+								h4 Free Worldwide Shipping
+								p On Order Over $100
+				+col4
+					.borde-plomo
+						span
+							i.fa.fa-money
+							div
+								h4 30 Days Money Back 100%
+								p Satisfaction Guarantee

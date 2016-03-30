@@ -1,0 +1,70 @@
+header.header_top_area
+	nav.navbar.navbar-fixed-top.nav-agency-theme
+		.container
+			.navbar-header
+				button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+					span.sr-only Toggle Navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="#") Default Welcome Msg!
+			#navbar.navbar-collapse.collapse
+				ul.nav.navbar-nav.navbar-right
+					li: a(href="#")
+						img(src="assets/images/flag1.png", alt="Language flag")
+						span Language
+						i.fa.fa-angle-down
+					li: a(href="#")
+						i.fa.fa-usd
+						span Currency
+						i.fa.fa-angle-down
+					li: a(href="#")
+						i.fa.fa-user
+						span My Account
+						i.fa.fa-angle-down
+header.header_middle_area
+	.container
+		.row
+			.col-xs-12.col-sm-4.col-md-4.col-lg-4
+				i.fa.fa-clock-o
+				.time-attend
+					h2 Opening Time
+					p 9:00 AM -10.00 PM
+			.col-xs-12.col-sm-4.col-md-4.col-lg-4
+				img.img-responsive(src="assets/images/logo.png", alt="logo Accesories")
+			.col-xs-12.col-sm-4.col-md-4.col-lg-4
+				input(type="text" name="search_input" placeholder="Search")
+header.header_bottom_area
+	.container
+		.pull-left
+			nav
+				ul
+					li
+						a(href="index.html") Home
+						a(href="contact-us.html") Contact us
+		.pull-right
+			.dropdown
+				button.btn.dropdown-toggle(type="button" data-toggle="dropdown")
+					i.fa.fa-shopping-cart
+					span My Cart
+					p 2 item(s)-$244.00
+				ul.dropdown-menu
+					li: a(href="#")
+						img.w-50.img-responsive(src="assets/images/cart-1.jpg", alt="Bolso")
+						h4 Aliquam Consequat
+						p 1 x $
+							span 500
+					li: a(href="#")
+						img.w-50.img-responsive(src="assets/images/cart-2.jpg", alt="Gorro")
+						h4 Quisque In Arcuc
+						p 1 x $
+							span 200
+					li
+						span.pull-left Sub-Total
+						span.pull-right $700
+					li
+						span.pull-left Eco Tax (-2.00)
+						span.pull-right $700
+					li
+						span.pull-left VAT (20%)
+						span.pull-right $40.00

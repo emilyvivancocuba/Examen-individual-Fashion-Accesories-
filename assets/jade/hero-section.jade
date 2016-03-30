@@ -1,0 +1,19 @@
+.w-100.hero-section
+	.hero-title
+		a(href="#") Autumn/Winter Lookbook
+		p ole
+	#myCarousel.carousel.slide(data-ride="carousel")
+		ol.carousel-indicators
+			li.active(data-target="#myCarousel", data-slide-to="0")
+			li(data-target="#myCarousel", data-slide-to="1")
+		.carousel-inner(role="listbox")
+			.item.active
+				img(src="assets/images/slider1.jpg", alt="Accesories slider 1")
+			.item
+				img(src="assets/images/slider2.jpg", alt="Accesories slider 2")
+		a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+			span.fa.fa-circle(aria-hidden="true")
+			span.sr-only Previous
+		a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
+			span.fa.fa-circle(aria-hidden="true")
+			span.sr-only Next

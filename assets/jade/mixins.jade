@@ -1,0 +1,109 @@
+mixin col4
+	.col-xs-12.col-sm-4.col-md-4.col-lg-4
+		if block
+			block
+mixin col3
+	.col-xs-12.col-sm-6.col-md-3.col-lg-3
+		if block
+			block
+mixin article-price-offer(imgURL, imgALT)
+	+col3
+		a(href="#")
+			img.img-bg-change(src="#{imgURL}", alt="#{imgALT}")
+			h4= 'Deliver Wide'
+			p
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star-o
+				i.fa.fa-star-o
+			p
+				span
+					del $242.00
+				$218.00
+			if block
+				block
+mixin article-price(imgURL, imgALT)
+	+col3
+		a(href="#")
+			img.img-bg-change(src="#{imgURL}", alt="#{imgALT}")
+			h4= 'Deliver Wide'
+			p
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star-o
+				i.fa.fa-star-o
+			p='$ 218.00'
+			if block
+				block
+mixin cliente(imgURL, imgALT)
+	.col-xs-12.col-sm-4.col-md-2.col-lg-2
+		img.w-100.img-responsive(src="#{imgURL}", alt="#{imgALT}")
+		if block
+			block
+mixin tag-new
+	.tag-new
+		span NEW
+		if block
+				block
+mixin tag-sale
+	.tag-sale
+		span SALE
+		if block
+			block
+mixin article-price-buy-offer(imgURL, imgALT)
+	+col4
+		img.img-responsive.img-thumbnail.w-50.text-left(src="#{imgURL}", alt="#{imgALT}")
+		div
+			h4= 'Deliver Wide'
+			p
+				span
+					del $242.00
+				$218.00
+			p
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star-o
+				i.fa.fa-star-o
+			a(href="#")
+				i.fa.fa-shopping-cart
+				span Add to Cart
+			if block
+				block
+mixin article-price-buy(imgURL, imgALT)
+	+col4
+		img.img-responsive.img-thumbnail.w-50.text-left(src="#{imgURL}", alt="#{imgALT}")
+		div
+			h4= 'Deliver Wide'
+			p='$ 218.00'
+			p
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star
+				i.fa.fa-star-o
+				i.fa.fa-star-o
+			a(href="#")
+				i.fa.fa-shopping-cart
+				span Add to Cart
+			if block
+				block
+mixin blog(imgURL, imgALT, href)
+	+col3
+		div.text-left
+			img.w-100.img-responsive(src="#{imgURL}", alt="#{imgALT}")
+			h4 The Sample Heading Title
+			p 27/11/2015
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, neque, do...
+			a(href="#{href}") Read more...
+			if block
+				block
+mixin nav-footer-links(h4, a1, a2, a3, a4, hr1, hr2, hr3, hr4)
+	.col-xs-12.col-sm-6.col-md-2.col-lg-2
+		h4= h4
+		nav
+			li: a(href=hr1)=a1
+			li: a(href=hr2)=a2
+			li: a(href=hr3)=a3
+			li: a(href=hr4)=a4
